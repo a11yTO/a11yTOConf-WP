@@ -25,10 +25,15 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'a11ytoconf' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="logoContainer">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/header_background.png" alt="accessibility and inlcusive design meetup group">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/a11yto_conf_logo-blue.png" alt="accessibility and inlcusive design meetup group">
+			
+		</div>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
