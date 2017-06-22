@@ -15,9 +15,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'a11ytoconf' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'a11ytoconf' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'a11ytoconf' ), 'a11ytoconf', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
+			<p><?php echo date('Y'); ?> a11yTOConf - Accessibility Toronto Conference</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
