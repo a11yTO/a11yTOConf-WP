@@ -26,7 +26,6 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="logoContainer">
-			<img src="<?php bloginfo('template_directory'); ?>/assets/header_background.png" alt="accessibility and inlcusive design meetup group">
 			<img src="<?php bloginfo('template_directory'); ?>/assets/a11yto_conf_logo-blue.png" alt="accessibility and inlcusive design meetup group">
 			
 		</div>
