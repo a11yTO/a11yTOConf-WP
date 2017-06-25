@@ -13,6 +13,10 @@ Tags:
 
 @import "underscores";
 
+
+$a11yRed: #d44619;
+$a11yBlue: #1d7fa8;
+
 html {
   box-sizing: border-box;
 }
@@ -20,7 +24,7 @@ html {
   box-sizing: inherit;
 }
 
-html{
+html, body {
 	margin: 0;
 }
 
@@ -28,7 +32,7 @@ html{
 h1 {
 	color: white;
 	font-family: 'League Spartan', 'Open Sans', sans-serif;
-	font-size: 138px;
+	font-size: 138px; 
 	font-weight: 600;
 	margin: 100px 0 20px;
 	white-space: nowrap;
@@ -39,14 +43,14 @@ h2, h3 {
 	font-weight: 400;
 	margin: 0;
 	position: relative;
-	color: #d44619;
+	color: $a11yRed;
 	font-size: 30px;
 }
 h2:before, h3:before {
 	content: '/';
 	position: absolute;
 	left: -25px;
-	color: #1d7fa8;
+	color: $a11yBlue;
 }
 p {
 	color: #333;
@@ -58,19 +62,19 @@ p {
 a {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	color: #1d7fa8;
+	color: $a11yBlue;
 	text-decoration: none;
-	border-bottom: 2px solid #d44619;
+	border-bottom: 2px solid $a11yRed;
 	transition: 0.3s all;
 }
 a:hover, a:focus, a:active {
 	text-decoration: none;
-	color: #d44619;
+	color: $a11yRed;
 }
 
 /* header */
 .site-header {
-	background: #1d7fa8 url('assets/header_background.png');
+	background: $a11yBlue url('assets/header_background.png');
 	background-repeat: no-repeat;
 	background-position: top center;
 	text-align: center;
@@ -86,10 +90,20 @@ a:hover, a:focus, a:active {
     left: 17%;
 }
 .main-navigation {
-    clear: none;
-    display: inline-block;
     float: right;
-    width: auto;
+    margin-top: 14px;
+}
+.menu li {
+	border: none;
+    margin-left: 20px;
+}
+.menu a {
+	color: white;
+	border: none;
+}
+.menu a:hover, .menu a:active, .menu a:focus {
+	color: white;
+	border-bottom: 2px solid $a11yRed;
 }
 .site-header .text-wrapper {
 	width: 63%;
@@ -220,7 +234,7 @@ footer p {
 	    padding: 6vw 0 8vw;
 	}
 } 
-/* end media query 1180px */
+/* end media query 1180px  */
 
 @media (max-width: 580px) {
 	.site-header .text-wrapper {

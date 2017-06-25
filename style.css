@@ -749,7 +749,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-html {
+html, body {
   margin: 0; }
 
 /* fonts */
@@ -813,10 +813,20 @@ a:hover, a:focus, a:active {
   left: 17%; }
 
 .main-navigation {
-  clear: none;
-  display: inline-block;
   float: right;
-  width: auto; }
+  margin-top: 14px; }
+
+.menu li {
+  border: none;
+  margin-left: 20px; }
+
+.menu a {
+  color: white;
+  border: none; }
+
+.menu a:hover, .menu a:active, .menu a:focus {
+  color: white;
+  border-bottom: 2px solid #d44619; }
 
 .site-header .text-wrapper {
   width: 63%;
@@ -930,7 +940,7 @@ footer p {
     line-height: 4.5vw;
     padding: 6vw 0 8vw; } }
 
-/* end media query 1180px */
+/* end media query 1180px  */
 @media (max-width: 580px) {
   .site-header .text-wrapper {
     width: 100%;
