@@ -20,7 +20,7 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
+html{
 	margin: 0;
 }
 
@@ -84,6 +84,12 @@ a:hover, a:focus, a:active {
 .logoContainer img {
 	position: relative;
     left: 17%;
+}
+.main-navigation {
+    clear: none;
+    display: inline-block;
+    float: right;
+    width: auto;
 }
 .site-header .text-wrapper {
 	width: 63%;

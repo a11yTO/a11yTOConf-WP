@@ -458,12 +458,6 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -755,7 +749,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-html, body {
+html {
   margin: 0; }
 
 /* fonts */
@@ -817,6 +811,12 @@ a:hover, a:focus, a:active {
 .logoContainer img {
   position: relative;
   left: 17%; }
+
+.main-navigation {
+  clear: none;
+  display: inline-block;
+  float: right;
+  width: auto; }
 
 .site-header .text-wrapper {
   width: 63%;

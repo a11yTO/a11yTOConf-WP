@@ -27,28 +27,24 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="logoContainer">
 			<img src="<?php bloginfo('template_directory'); ?>/assets/a11yto_conf_logo-blue.png" alt="accessibility and inlcusive design meetup group">
-			
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'a11ytoconf' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->			
 		</div>
-		<div class="site-branding">
+		<div class="site-branding  text-wrapper">
 			<?php
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page()  ) : ?>
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
+				<?php $description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p class="site-description  subtitle"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<?php
+				endif; 
 			endif; ?>
+
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'a11ytoconf' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

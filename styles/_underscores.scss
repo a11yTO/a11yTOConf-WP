@@ -511,7 +511,7 @@ a:active {
 
 a:focus {
 	outline: thin dotted;
-}
+} 
 
 a:hover,
 a:active {
@@ -521,12 +521,6 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
 
 .main-navigation ul {
 	display: none;
