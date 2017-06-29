@@ -849,6 +849,13 @@ a:hover, a:focus, a:active {
   padding: 60px 0 100px;
   font-weight: 400; }
 
+.entry-header {
+  display: none; }
+
+.site-content {
+  background: #EDF5F8;
+  padding: 40px; }
+
 /* sections */
 section {
   padding: 40px; }
